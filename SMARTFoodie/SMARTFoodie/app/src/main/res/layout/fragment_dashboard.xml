@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <Button
+        android:id="@+id/bMealPlan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:text="Meal Planner"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bHealthyDiet"
+        app:layout_constraintBottom_toTopOf="@+id/bPantry"/>
+
+    <Button
+        android:id="@+id/bHealthyDiet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:text="Healthy Diet"
+        android:drawableLeft="@android:drawable/ic_menu_compass"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/bMealPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bLearnMore"/>
+
+    <Button
+        android:id="@+id/bPantry"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:text="My Pantry"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bLearnMore"
+        app:layout_constraintTop_toBottomOf="@+id/bMealPlan"/>
+
+    <Button
+        android:id="@+id/bLearnMore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:text="LearnMore"
+        android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/bHealthyDiet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bPantry"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
